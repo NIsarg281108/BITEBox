@@ -29,3 +29,33 @@ background-color: #ff0073dd;
 padding: 10px 20px;
 border-radius: 100px;
 }
+.hero{
+height: 90vh;
+background:url(/media/banner.png) no-repeat center center/cover;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.hero button{
+margin-top: 20px;
+background: #0da5cf;
+color: #ffffff;
+padding: 10px 20px;
+border-radius: 100px;
+cursor: pointer;
+}
+.hero button:hover{
+background: #10b710;
+}
+.video-section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 50px;
+gap: 40px;
+}
+.video-box video{
+width: 100%;
+border-radius: 50px;
+}

@@ -59,3 +59,50 @@ gap: 40px;
 width: 100%;
 border-radius: 50px;
 }
+.video-text h2{
+font-size: 32px;
+margin-bottom: 15px;
+}
+.video-text p{
+color: rgb(75, 23, 23);
+font-size: 18px;
+}
+.video-text{
+flex: 1;
+}
+.video-box{
+flex: 1;
+}
+.about{
+text-align: center;
+padding: 60px 20px;
+background-color: #f8f8f8;
+}
+.about h2{
+font-size: 32px;
+}
+.card{
+background-color: #cf4f71d5;
+padding: 50px;
+border-radius: 20px;
+}
+.card img{
+width: 100%;
+object-fit: cover;
+}
+.card button{
+background-color: #ff0073dd;
+color: white;
+border-radius: 100px;
+cursor: pointer;
+margin-top: 10px;
+}
+.card button:hover{
+background-color: #ff0073;
+}
+.menu-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+}

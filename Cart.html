@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BITE The Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="x-icon" href="images/favicon_io/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
 </head>
+ <header>
+  <nav>
+    <img src="images/logo2.png" alt="logo" >
+    <ul>
+      <li><a href="Home.html" class="active"><i class="fa-regular fa-house"></i></a></li>
+      <li><a href="Menu.html">Menu</a></li>
+      <li><a href="BiteDeals.html">BiteDeals</a></li>
+      <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      <li><a href="Login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+    </ul>
+  </nav>
+ </header>
 <body>
-    this is cart page
+    <section class="cart">
+        <table>
+            <thead>
+                <tr>
+                    <th>item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="item">
+                        <img src="menu/burger.jpg" alt="Burger">
+                        <div>
+                            <h4>Burger</h4>
+                            <p>Delicious beef burger with cheese and lettuce</p>
+                        </div>
+                    </td>
+                    <td>rs 199</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>rs 199</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <img src="menu/pasta.jpg" alt="Pasta">
+                        <div>
+                            <h4>Pasta</h4>
+                            <p>Delicious pasta with marinara sauce and herbs</p>
+                        </div>
+                    </td>
+                    <td>rs 199</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>rs 199</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+                <tr>
+                    <td class="item">
+                        <img src="menu/chese momos.jpg" alt="Cheese Momos">
+                        <div>
+                            <h4>Cheese Momos</h4>
+                            <p>Delicious cheese momos with spicy sauce</p>
+                        </div>
+                    </td>
+                    <td>rs 199</td>
+                    <td>
+                        <div class="qty-box">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>rs 199</td>
+                    <td><button class="remove">Remove</button></td>
+                </tr>
+                <tr class="total" style="border: #1a31a5;">
+                    <td colspan="3">Total</td>
+                    <td>Rs 597</td>
+                    <td><button class="checkout">Checkout</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>

@@ -9,6 +9,7 @@
     <link rel="icon" type="x-icon" href="images/favicon_io/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 <body>
  <header>
   <nav>
@@ -26,11 +27,15 @@
     <div class="auth-box">
         <h2>Login To BiteBox</h2><br>
         <form>
-            <input type="text" name="username" placeholder="Username" required><br>
-            <input type="password" name="password" placeholder="Password" required><br><br>
-            <button type="submit">Login</button><br><br>
+            <input id="email" type="text" name="username" placeholder="Username" required>
+            <div style="position: relative;">
+              <input id="password" type="password" name="password" placeholder="Password" required>
+              <i class="fa-solid fa-eye" onclick="togglepassword()" style="position: absolute; right:50px; top: 20px;"></i>
+            </div>
+            <button type="button" onclick="login()">Login</button><br><br>
             <p style="margin-bottom: 5px;"><a href="register.html">Forgot Password</a></p>
-             <p>Don't have an account<a href="register.html"> Signup</a></p>
+            <p id="error" style="color: crimson"></p>
+            <p>Don't have an account<a href="register.html"> Signup</a></p>
         </form>
     </div>    
  </section>
